@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0A122A"
+    android:gravity="center"
+    tools:context="com.nonexistentware.igor.zeroloop.main">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="475dp">
+
+        <TextView
+            android:textColor="#fff"
+            android:id="@+id/startLabel"
+            android:layout_width="match_parent"
+            android:layout_height="569dp"
+            android:text="Tap to start"
+            android:textSize="30sp"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/planetpurple"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/planetpurple"/>
+
+
+        <ImageView
+            android:id="@+id/planetblue"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/planetblue2"/>
+
+        <ImageView
+            android:id="@+id/deathstar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/deathstar"/>
+
+        <ImageView
+            android:id="@+id/earth"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/earth2"/>
+
+        <ImageView
+            android:id="@+id/skull"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/skull"/>
+
+        <ImageView
+            android:id="@+id/powerup"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/powerup"/>
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/player"
+            android:id="@+id/player"
+            android:layout_gravity="center_vertical" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+
+        android:id="@+id/scoreBar"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#000"
+        android:weightSum="2">
+
+
+        <TextView
+            android:id="@+id/scoreLabel"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Score : 000"
+            android:textSize="40sp"
+            android:layout_weight="1" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
